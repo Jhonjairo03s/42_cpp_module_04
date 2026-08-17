@@ -6,7 +6,7 @@
 /*   By: jhvalenc <jhvalenc@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/15 15:18:26 by jhvalenc          #+#    #+#             */
-/*   Updated: 2026/08/17 13:26:28 by jhvalenc         ###   ########.fr       */
+/*   Updated: 2026/08/17 21:19:05 by jhvalenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main(void)
     delete  j;
     delete  i;
 
-    std::cout << '\n' << "--------------------------------------------" << '\n' << std::endl;
+    std::cout << "\n--------------------------------------------\n" << std::endl;
 
     const WrongAnimal* metaWrong = new WrongAnimal();
     const WrongAnimal* x = new WrongCat();

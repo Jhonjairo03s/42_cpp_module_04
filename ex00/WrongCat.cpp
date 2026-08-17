@@ -6,7 +6,7 @@
 /*   By: jhvalenc <jhvalenc@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/17 12:53:19 by jhvalenc          #+#    #+#             */
-/*   Updated: 2026/08/17 13:18:43 by jhvalenc         ###   ########.fr       */
+/*   Updated: 2026/08/17 21:16:49 by jhvalenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,18 @@ void    WrongCat::makeSound(void) const
 
 WrongCat::WrongCat() : WrongAnimal()
 {
+    std::cout << "Default constructor of the derived class WrongCat called" << '\n';
     this->type = "WrongCat";
-    std::cout << "Default constructor of the base class WrongCat called" << '\n';
 }
 
 WrongCat::WrongCat(const WrongCat& other) : WrongAnimal(other)
 {
-    std::cout << "Copy constructor called of the base class WrongCat called" << '\n';
+    std::cout << "Copy constructor called of the derived class WrongCat called" << '\n';
 }
 
 WrongCat& WrongCat::operator=(const WrongCat& other)
 {
-    std::cout << "Copy assignment operator of the base class WrongCat called" << '\n';
+    std::cout << "Copy assignment operator of the derived class WrongCat called" << '\n';
     if (this != &other)
         WrongAnimal::operator=(other);
     return (*this);
@@ -38,5 +38,5 @@ WrongCat& WrongCat::operator=(const WrongCat& other)
 
 WrongCat::~WrongCat()
 {
-    std::cout << "Destructor of the base class WrongCat called" << '\n';
+    std::cout << "Destructor of the derived class WrongCat called" << '\n';
 }
